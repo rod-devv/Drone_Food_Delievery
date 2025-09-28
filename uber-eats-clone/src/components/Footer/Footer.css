@@ -1,0 +1,163 @@
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #444;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #555;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 20px 20px 0;
+  border-top: 1px solid #444;
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.app-download {
+  /* margin-top: 25px; */
+}
+
+.app-download h4 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 160px;
+}
+
+.download-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.download-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 1.2;
+}
+
+.download-small {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.download-big {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle {
+    align-items: start;
+  }
+
+  .download-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .download-button {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

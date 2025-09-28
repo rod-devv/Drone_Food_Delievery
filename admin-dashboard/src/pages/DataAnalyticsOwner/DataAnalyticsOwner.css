@@ -1,0 +1,143 @@
+/* Dashboard styling */
+.chart-container {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* Statistics cards */
+.stat-card {
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-row {
+  margin-bottom: 2rem;
+}
+
+.full-width-chart {
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* Chart titles */
+.chart-title {
+  color: #2d3748;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.3rem !important;
+}
+
+/* Metrics grid */
+.metrics-row {
+  margin-bottom: 2rem;
+}
+
+.full-width-chart {
+  margin-bottom: 2rem;
+}
+
+.full-width-chart .stat-card {
+  min-height: 450px;
+}
+
+/* Chart specific styling */
+.performance-metrics .recharts-bar {
+  filter: drop-shadow(0 2px 4px rgba(136, 132, 216, 0.3));
+}
+
+.delivery-pie-chart .recharts-pie-sector {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Loading and error states */
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.loading-container .MuiTypography-root {
+  color: #667eea;
+  font-weight: 500;
+}
+
+.error-container .MuiTypography-root {
+  color: #e53e3e;
+  font-weight: 500;
+}
+
+/* Chart tooltips */
+.recharts-tooltip-wrapper {
+  z-index: 1000;
+}
+
+.recharts-default-tooltip {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom styling for pie charts */
+.custom-pie .recharts-pie-label-text {
+  font-weight: bold;
+  fill: #2d3748;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .dashboard-title {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 1.5rem 0;
+  }
+  
+  .dashboard-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+  
+  .full-width-chart .stat-card {
+    min-height: 350px;
+  }
+  
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-panel {
+    margin: 0 1rem 2rem 1rem;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .chart-title {
+    font-size: 1.1rem !important;
+  }
+}

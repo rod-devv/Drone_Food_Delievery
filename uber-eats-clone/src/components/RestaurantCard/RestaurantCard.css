@@ -1,0 +1,86 @@
+.restaurant-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+}
+
+.restaurant-address {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.restaurant-description {
+  color: #444;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-number {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.rating-stars {
+  display: flex;
+}
+
+.star {
+  color: #ffc107;
+  margin-right: 2px;
+}
+
+.star.empty {
+  color: #e0e0e0;
+}
+
+.star.half {
+  position: relative;
+  overflow: hidden;
+}
+
+.star.half::after {
+  content: '★';
+  color: #e0e0e0;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+}

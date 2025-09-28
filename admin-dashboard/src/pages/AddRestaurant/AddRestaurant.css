@@ -1,0 +1,88 @@
+/* Clean up duplicate declarations in your CSS file */
+/* filepath: c:\Users\rodin\Desktop\a\admin-dashboard\src\pages\AddRestaurant\AddRestaurant.css */
+
+/* Map container styling */
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  position: relative; /* Important for positioning relative to container */
+}
+
+/* Restaurant marker styling */
+.restaurant-marker {
+  background-color: #e74c3c;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 2px solid white;
+  position: relative;
+  transform-origin: center; /* Ensure scaling happens from center */
+}
+
+/* Center dot for precise positioning */
+.restaurant-marker::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Crosshair cursor for better position indication */
+.mapboxgl-canvas-container {
+  cursor: crosshair !important;
+}
+
+/* Rest of your CSS... */
+
+.add-restaurant-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.add-restaurant-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.restaurant-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-form input,
+.restaurant-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.restaurant-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restaurant-form button:hover {
+  background-color: #218838;
+}

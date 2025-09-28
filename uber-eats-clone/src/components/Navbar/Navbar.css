@@ -1,0 +1,128 @@
+.navbar {
+  background-color: rgb(167, 52, 52);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  /* height: 100px; */
+
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+#logo {
+  position: absolute;
+  top: -20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 55px;
+  color: rgb(224, 209, 0);
+}
+
+.logo-container {
+  position: relative;
+  /* padding: 0 10px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.icon-drone {
+  position: absolute;
+  left: 7px;
+  font-size: 40px;
+  top: -37px;
+  color: #ffffff;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  margin-left: 100px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn,
+.signup-btn,
+.logout-btn {
+  margin-left: 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.login-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.signup-btn {
+  background-color: #000;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.welcome-text {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  /* .navbar-container {
+    flex-direction: column;
+    padding: 10px;
+  } */
+
+  /* .navbar-logo {
+    margin-bottom: 10px;
+  } */
+  /* 
+  .navbar-buttons {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+}
+
+@media (max-width: 530px) {
+  .navbar-buttons {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+}

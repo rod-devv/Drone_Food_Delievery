@@ -1,0 +1,118 @@
+.home-page {
+  padding: 0 30px;
+}
+
+.hero-section {
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column; */
+  padding-bottom: 220px;
+  /* 
+ text-align: center; */
+  width: 100%;
+  /* padding: 400px 0px; */
+  min-height: 800px;
+  background: url("https://res.cloudinary.com/dynoujkny/image/upload/v1745143338/bg_drone.jpg");
+  /* linear-gradient(rgba(230, 165, 165, 0.5), rgba(17, 122, 148, 0.5)), */
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 70%;
+  color: white;
+  /* border-radius: 8px; */
+  margin-bottom: 40px;
+}
+
+.hero-section-content {
+  display: flex;
+  padding-top: 400px;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* background: #000; */
+  gap: 40px;
+  width: 100%;
+  padding-top: 490px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-bar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+.hero-section h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.map-section {
+  margin-bottom: 40px;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+}
+
+.cities-section h2 {
+  margin-bottom: 20px;
+}
+
+.city-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.city-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.city-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city-card h3 {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 0 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .hero-section-content {
+    padding-top: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .city-grid {
+    grid-template-columns: 1fr;
+  }
+}

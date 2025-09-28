@@ -1,0 +1,92 @@
+/* Add these styles to DataAnalytics.css */
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+}
+
+.custom-tooltip .label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.restaurant-list {
+  margin-top: 5px;
+  padding-left: 15px;
+  /* min-height: 800px; */
+  width: 100%;
+  overflow-y: auto;
+}
+
+.restaurant-list li {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.data-analytics h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.analytics-section {
+  margin-bottom: 40px;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-wrapper {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loading,
+.error {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.error {
+  color: #d32f2f;
+}

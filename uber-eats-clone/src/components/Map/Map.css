@@ -1,0 +1,50 @@
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+
+.city-marker {
+  font-size: 24px;
+  color: #ff5a5f;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.restaurant-marker {
+  font-size: 24px;
+  color: #ff9e00;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.delivery-marker {
+  font-size: 24px;
+  color: #4285f4;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
